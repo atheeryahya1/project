@@ -1,0 +1,327 @@
+*{
+    margin: 0;            /* لتحديد المسافة والتاثير علي تنسيق الصفحة*/
+    padding:0;    /* انة لايوجد اي تباعداي لايوجد اي مسافة فارغ بين الحافة الخارجية للعنصر والداخلية للمحتوى*/
+   }
+   html{
+       font-size:15px;
+       scroll-behavior:smooth;
+   }
+   body{
+       background:#81878f;
+   }
+   /* للكلام بدك طلبك بسرعة */
+   h1{
+       font-size:5rem;
+       color:  #ffffff;
+   }
+   
+   h3{
+       font-size: 2rem;
+       margin-bottom: 2rem;/*عمل مسافة في اسفل الكلام*/
+        background-color: rgb(108, 112, 112);/*      *************************** */
+   }
+   .btn{
+       font-size: 1.6rem;
+       font-weight: bold;/*تجعل الخط سميك وظاهر*/
+       padding:0.75rem 3rem ;/* من فوق لتحت ومن اليمين لليسار*/
+       border-radius:0.5rem;/* حواف للمربع من اليمين ومن اليسار*/
+       border: none;/* بدون حواف*/
+   }
+   .btn a{
+       color: #632856;
+       font-size:1.6rem;
+       text-decoration: none;
+   }
+    
+   .btn:hover{
+          /*عمل قفز لمربع اعرف عنا */
+       transform: translatey(-10px);            
+       background:#657c96; 
+   }
+   
+   p{
+       font-size: 1.6rem;
+       color:#345375;
+       line-height: 2;/*مسافات بين الاسطر*/
+   } 
+   /*NAV SECTION*/
+   /* راس الصفحة*/
+   .nav-container{
+       background:#334e68;
+       color:#f0f4f8;
+       
+   }
+   
+   nav{
+       width: 90%;/*للعرض*/
+       margin:0 auto;/* ازاله الهوامش*/
+       max-width:1366px;/*لتحديد العرض الاقصى*/
+       display:flex;
+       justify-content:space-between;/*توزيع المحتويات*/
+       align-items:center;/* لتحديد المحتوي في النص*/
+       min-height: 10vh;/* طول المربع الي بالصفحة الرئيسية*/
+       font-size:1.6rem;
+   }
+   nav.logo{
+       font-weight: bold;        /*تجعل الخط سميك وظاهر*/
+       color:#f0f4f8;
+   }
+   nav ul{
+       display: flex;/*تصميم مرن*/
+       list-style-type: none;
+       justify-content: space-between;
+       flex: 1;
+   }
+   nav ul li a{
+     display:block;/*توسيع المقاسات وتملأ الفراغ المتاح*/
+       color:#f0f4f8;
+       text-decoration: none;
+   }
+   nav ul li a:hover{
+       color: orange;
+   }
+   /*Hero section*/
+   .hero{
+       height: 90vh;
+       position: relative;
+   }
+   /* الصور*/
+   .hero::after{
+       content: "";
+       position: absolute;
+       z-index: -1;/*  للترتيب  الصورة الاولة*/
+        top:0;
+        bottom:0 ;
+        left: 0;
+        right: 0;
+       
+        /*linear-gradient()*/
+       /* background-image:linear-gradient(90deg, rgba(51,78,104,0.2) 0%,rgba(20,63,92,0.8)20%),
+         url("./p.jpeg.jpg");*/
+        
+   } 
+   /*دمج الصورة*/
+   .head{
+       
+    background-image: url(./imag/t.ahmed.png);
+    background-repeat: no-repeat;/*لعدم تكرار الصورة*/
+    background-size: cover;  /* تكون الصورة مملتة في الواجهة*/
+}
+   .content{
+       width:90%;
+       margin:0 auto;
+       max-width:1366px ;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: flex-start;
+       height:90vh;
+   }
+   h1 span,
+   h3 span{
+       color:#bcbbeb ;
+   }
+   
+   /*gualities section*/
+   .qualities{
+       width:90%;
+       margin:4rem auto;
+       max-width: 1366px;
+       height:100%;
+       min-height:50vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       text-align: center;
+       
+       
+   }
+   
+   .qualities h2{
+       font-size: 3rem;
+   }
+   .quality-container{
+       display: flex;
+       justify-content: 5pace-between;
+       grid-gap:2rem;
+       padding: 5rem;  
+   }
+   .quality{
+       background: #bcccdc;
+       padding: 4rem 0;
+       width: 30%;
+   }
+   quality p{
+       text-align: center;
+       width:70% ;
+       margin:1rem auto;  
+   }
+   .quality h3{
+       color: black;
+       font-size:2.2rem;
+   }
+   
+   /*About section*/
+   .about-container{
+       background: #334e68;
+   }
+   .about-us{
+       text-decoration: none;
+       width:90% ;
+      max-width: 1366px;
+      margin: 0 auto;
+      height: 60vh;
+      display: flex;
+      justify-content:space-between;
+   }
+   .about-content{
+       display: flex;
+       flex-direction: column;
+       justify-content:center;
+       text-decoration: none;
+
+   }
+   .about-content h2{
+       color: #d9e2ec;
+       font-size: 3rem;
+   }
+   .about-content p{
+       margin: 1rem;
+       color: #f5f5f5;
+       width: 90%;
+   }
+   
+   .about- us img{
+       width: 100%;
+       height: 100%;
+   }
+   /*contact us section*/
+   .contact{
+       width:90%;
+       max-width: 1366px;
+       margin: 3rem auto;
+       height: 100%;
+       padding: 2rem 0;
+       text-align: center;
+   }
+   .contact h2{
+       font-size: 3rem;
+   }
+   
+   label,
+   input,
+   textarea{
+       font-family: inherit;
+       font-size: 1.6rem;
+   }
+   form{
+       display: flex;
+       flex-direction: column;
+       padding:5rem 0;
+       width: 100%;
+    }
+   form .btn{
+       width: 100;
+       align-self: center;
+       text-decoration: none;
+   
+   }
+   input,
+   textarea{
+       width: 80%;
+       border-radius: 1rem;
+       outline: none;
+       padding:0.75rem 2rem ;
+       margin: 0 auto;
+   
+   }
+   label, 
+   input,
+   textarea{
+       margin-bottom: 1.5rem;
+   }
+   footer{
+       background: #243b53;
+       display: flex;
+       justify-content:center;
+       align-items: center;
+       height: 20vh;
+   }
+   footer p{
+       color: #d9d9d9;
+   
+   }
+   
+   
+   .row{
+       width: 70%;
+       max-width: 1300px;
+       margin: auto;
+       display:grid;
+       grid-template-columns:repeat( auto-fit,minmax(250px,1fr)) ;
+       grid-gap:25px;
+   }
+   .col{
+       background: #1f283b;
+       padding: 10%,15%;
+       border-radius: 25px;
+       color: #fff;
+       text-align:center;
+   }
+   .image{
+       width: 150px;
+       min-width: 40vh;
+       border-radius: 20px;
+   
+    
+   }
+   
+   .image:hover{
+       opacity:0.5s;
+      
+   }
+   .row,col,image.btn:hover{
+       transform: translatey(10px);            
+       background:#040827;
+   }
+   .row:hover{
+       background-color: rgb(150, 194, 245);   
+   }
+    
+   .text-box h3{
+       font-size: 30px;
+   }
+   .logo{
+       border-radius: 40px;
+       background-color: rgb(11, 22, 66);
+       font-size: 25px; 
+    height: 40px;
+   }
+    
+   
+   
+   
+   /*.row,col,image.btn:hover{
+       transform: translatey(10px);            
+       background:#25282b; 
+   
+   }*/
+   
+   .quality-container:hover{
+       transform: translatey(-10px);            
+       background-color: rgb(6, 3, 26);
+   
+   }
+   .text-box :hover{
+       transform: translatey(-100px);
+   
+   }
+   
+   .qualities:hover{
+       transform: translatey(34px);
+   }
+   .header-container:hover{
+       transform: translatey(34px);
+   
+   
+   }
